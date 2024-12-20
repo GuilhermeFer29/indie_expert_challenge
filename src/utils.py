@@ -1,0 +1,1 @@
+# Funções auxiliares (cálculos, transformação de dados)
