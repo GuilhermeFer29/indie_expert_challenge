@@ -1,98 +1,98 @@
 ie_cliente,id,name,active,module,type,description,priority,category,pipelines,boards
-2,CF_K7Rm8wSRC9EKdMbN,[LP Conversão][LP Orçamento]{Fechada} Qual é o seu Perfil?,True,CONTACT,TEXT,0,12,0,0,0
-2,CF_gvGm3rS0CebzwM45,[LP Conversão][LP Orçamento] {Fechada} Você quer receber informações de qual produto Lesco?,True,CONTACT,TEXT,0,13,0,0,0
-2,CF_wGrqzpiVC64dAmLo,Motivo de Perda,True,DEAL,TEXT,0,25,0,0,0
-2,CF_E79Mr2ioCVNpdMZJ,[LP Conversão][LP Orçamento]{Fechada} Qual é o seu Perfil?,True,DEAL,TEXT,0,26,0,0,0
-2,CF_8P5q4Vi2Co0BgmRJ,[LP Conversão][LP Orçamento] {Fechada} Você quer receber informações de qual produto Lesco?,True,DEAL,TEXT,0,27,0,0,0
-2,CF_G21qVjSlCeanpqAX,Orçamento,True,CONTACT,TEXT,0,14,0,0,0
-2,CF_g40MLBiPC1p88D29,Orçamento,True,DEAL,TEXT,0,28,0,0,0
-2,CF_nrLDXoiVCar91mOa,Fonte,True,DEAL,TEXT,Qual a fonte de prospecção do Lead?,29,"{""id"": 9328}","[{""id"": 56548}]",0
-2,CF_x1kq63SnCYrprMzY,Camada Funil,True,CONTACT,TEXT,0,15,0,0,0
-2,CF_eZYm9BiyCorWaD47,Camada Funil,True,DEAL,TEXT,0,30,0,0,0
-2,CF_6rRmwGSvC1a9Lm4X,gclid_field,True,CONTACT,TEXT,0,16,0,0,0
-2,CF_K7Rm8QiRC9Qo6DbN,gclid_field,True,DEAL,TEXT,0,31,0,0,0
-2,CF_Rg7Mn4SLC8oVGDvd,Origem,True,CONTACT,TEXT,0,17,0,0,0
-2,CF_Lo1qjyi1CJWNrDer,Origem,True,DEAL,TEXT,0,32,0,0,0
-2,CF_2ojMxASPC61ljmOE,Perfil do Lead,True,CONTACT,TEXT,0,18,0,0,0
-2,CF_K7Rm8wSRC91L8MbN,Prazo Material,True,CONTACT,TEXT,0,19,0,0,0
-2,CF_3LvDvEi4ClVWom6a,Perfil do Lead,True,DEAL,TEXT,0,33,0,0,0
-2,CF_wGrqzpiVC6YEWmLo,Prazo Material,True,DEAL,TEXT,0,34,0,0,0
-2,CF_2ojMxASPC6PL7mOE,Já concluiu a sua obra?,True,CONTACT,TEXT,0,20,0,0,0
-2,CF_POEMywieCLpXWDdk,Já concluiu a sua obra?,True,DEAL,TEXT,0,35,0,0,0
-2,CF_eZYm9BivUo9aoD47,Data de envio da proposta,True,DEAL,DATE,0,36,0,0,0
-2,CF_dN7MGZSGCOBNkqeY,Perfil,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_rpGmBJSxSRVE9meR,Interesse,True,CONTACT,NUMBER,0,0,0,0,0
-2,CF_rpGmBJSoCRVE8meR,Fase da lead,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_R7PDNOSGCZ8L7qWJ,Cidade,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_AE5mp6SjCdkL4qO3,Estado,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_075MJBSjC6QKJMaz,Tags,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_VRAqdlSdCE3A2qbL,RD Station ID,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_0WGqoGSKC9OVZqnP,Origem do lead,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_oJZmPVSKCGwnoqgv,Já concluiu a sua obra?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_VrKMbOSaCOJ1KmZY,Qual é o seu Perfil?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_49RM1vSLCBOWvmBW,Você quer receber informações de qual produto Lesco?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_Rg7MnEiLCAZLyqvd,Perfil,True,DEAL,TEXT,0,0,0,0,0
-2,CF_42AmaJiaSwVN5Djl,Interesse,True,DEAL,NUMBER,0,0,0,0,0
-2,CF_42AmaJiZCwVNbDjl,Fase da lead,True,DEAL,TEXT,0,0,0,0,0
-2,CF_Lo1qjyi1CnxK3Der,Cidade,True,DEAL,TEXT,0,0,0,0,0
-2,CF_Pj3qYeieCr8lEqQe,Estado,True,DEAL,TEXT,0,0,0,0,0
-2,CF_YXoDkki3CVk40DGE,Tags,True,DEAL,TEXT,0,0,0,0,0
-2,CF_dVKmQ5i1CdeJQmWR,RD Station ID,True,DEAL,TEXT,0,0,0,0,0
-2,CF_A4wMWNigC6QwkqB8,Origem do lead,True,DEAL,TEXT,0,0,0,0,0
-2,CF_6rRmweivC6d3dq4X,Já concluiu a sua obra?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_vG0mR0ikCk6bgqbV,Qual é o seu Perfil?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_2ojMxLiPCZkOpMOE,Você quer receber informações de qual produto Lesco?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_vG0mR0iwik6AzqbV,Origem,True,DEAL,SINGLE_OPTION,Origem do Lead,1,"{""id"": 9328}",0,0
-2,CF_2ojMxLiNiZk9OMOE,Canal (Comunicação),True,DEAL,SINGLE_OPTION,Entrou em contato como?,2,"{""id"": 9328}",0,0
-2,CF_vG0mR0ikCk6AAqbV,Nome da Obra,True,DEAL,TEXT,Nome da Obra,3,"{""id"": 9328}",0,0
-2,CF_POEMywiZiJPQzDdk,Produto/Serviço,True,DEAL,MULTIPLE_OPTION,Inserir Produtos e Serviços da Proposta,4,"{""id"": 9328}",0,0
-2,CF_K7Rm8QiRCKJpLDbN,Cidade,True,DEAL,TEXT,Cidade,5,"{""id"": 9328}",0,0
-2,CF_wGrqzpi3id9nQmLo,Estado,True,DEAL,SINGLE_OPTION,Inserir UF,6,"{""id"": 9328}",0,0
-2,CF_wGrqzpiVCd9nZmLo,Observações,True,DEAL,TEXT,Observações,7,"{""id"": 9331}",0,0
-2,CF_eZYm9BiKiRgJzD47,Representante,True,DEAL,SINGLE_OPTION,Encaminhado ao Representante,8,"{""id"": 9328}",0,0
-2,CF_G5rMe5iBS3QBKMyj,Quantidade (m²),True,DEAL,NUMBER,Metragem Quadrada,9,"{""id"": 9328}",0,0
-2,CF_3nGqEoiJilYo9mYA,Perfil do Cliente,True,DEAL,SINGLE_OPTION,Escolher Perfil,10,"{""id"": 9328}",0,0
-2,CF_KaZmKySOC0AjxqJk,Solicite seu Orçamento,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_G21qV7ilCx8lpMAX,Solicite seu Orçamento,True,DEAL,TEXT,0,0,0,0,0
-2,CF_AE5mp6SjCd9wOqO3,Motivo de Perda,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_0WGqoEiKC9AY5mnP,Motivo de Perda,True,DEAL,TEXT,0,0,0,0,0
-2,CF_gPpD73SkCx0XzDvo,Origem,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_3NrDZBSnCJ1vKDP5,Produto/Serviço,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_rpGmBPioCR37dqeR,Origem,True,DEAL,TEXT,0,0,0,0,0
-2,CF_R7PDNQiGCZ3bWmWJ,Produto/Serviço,True,DEAL,TEXT,0,0,0,0,0
-2,CF_Pj3qYeidirRLwqQe,Prazo para o Material,True,DEAL,SINGLE_OPTION,Para Quando você precisa do Material?,14,"{""id"": 9328}",0,0
-2,CF_K7Rm8wSRCKYQxMbN,Para quando você precisa do material?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_3LvDvEi4CN7E2m6a,Para quando você precisa do material?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_A4wMWKUzSJwwAMB8,CNPJ.,True,COMPANY,NUMBER,CNPJ.,1,0,0,0
-2,CF_6rRmweivC133gq4X,Validade da Proposta,True,DEAL,TEXT,Validade da Proposta,11,0,0,0
-2,CF_vG0mR0ikCBbbyqbV,Forma de Pagamento,True,DEAL,TEXT,Forma de Pagamento,12,0,0,0
-2,CF_2ojMxLiPC6OOLMOE,Frete,True,DEAL,TEXT,Frete,13,0,0,0
-2,CF_ylAm0KS6C495AMvb,Qual é o seu perfil ?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_Rg7Mn4SLC8XAODvd,Já concluiu a sua obra ?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_A4wMWYSgCJEjBDB8,URL pública,True,CONTACT,URL,0,4,0,0,0
-2,CF_wPVm2oS2Cd9bZDK6,Para quando você precisa do material ?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_42AmakSZCLAwVqjl,Você quer receber informação de qual produto Lesco ?,True,CONTACT,TEXT,0,0,0,0,0
-2,CF_YXoDkki3CXYVPDGE,Qual é o seu perfil ?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_dVKmQ5i1Cwod0mWR,Já concluiu a sua obra ?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_A4wMWNigCJl69qB8,Para quando você precisa do material ?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_6rRmweivC1Z6vq4X,Você quer receber informação de qual produto Lesco ?,True,DEAL,TEXT,0,0,0,0,0
-2,CF_YXoDk8S3CXogNqGE,Você que receber informação de qual produto Lesco?,True,CONTACT,TEXT,0,1,0,0,0
-2,CF_6rRmweivC1A7Gq4X,Você que receber informação de qual produto Lesco?,True,DEAL,TEXT,0,15,0,0,0
-2,CF_Lo1qjjS1CJgw6qer,Qual é o seu perfil?,True,CONTACT,TEXT,0,2,0,0,0
-2,CF_Pj3qYoSeCj3ZZmQe,Para quando precisa do material?,True,CONTACT,TEXT,0,3,0,0,0
-2,CF_A4wMWNigCJEj6qB8,Qual é o seu perfil?,True,DEAL,TEXT,0,16,0,0,0
-2,CF_6rRmweivC1gb1q4X,Para quando precisa do material?,True,DEAL,TEXT,0,17,0,0,0
-2,CF_vG0mRlSPSBQXzqbV,Numero de conversões,True,CONTACT,NUMBER,0,5,0,0,0
-2,CF_vG0mRlSkCBQXbqbV,Produto/Serviço,True,CONTACT,TEXT,0,6,0,0,0
-2,CF_2ojMxASPC6AWwmOE,[LP Orçamento]{Fechada} Já concluiu sua obra?,True,CONTACT,TEXT,0,7,0,0,0
-2,CF_K7Rm8wSRC9EapMbN,Prazo para o Material,True,CONTACT,TEXT,0,8,0,0,0
-2,CF_gvGm3rS0CebNYM45,Perfil do Cliente,True,CONTACT,TEXT,0,9,0,0,0
-2,CF_wGrqzpiVC64jEmLo,URL pública,True,DEAL,URL,0,18,0,0,0
-2,CF_8P5q4Vi1So0O3mRJ,Numero de conversões,True,DEAL,NUMBER,0,19,0,0,0
-2,CF_8P5q4Vi2Co0O5mRJ,Produto/Serviço,True,DEAL,TEXT,0,20,0,0,0
-2,CF_QJXmA5ijCR7d9m25,[LP Orçamento]{Fechada} Já concluiu sua obra?,True,DEAL,TEXT,0,21,0,0,0
-2,CF_x1kq6oinCYbWdMzY,Prazo para o Material,True,DEAL,TEXT,0,22,0,0,0
-2,CF_KaZmKNiOCxG7yMJk,Perfil do Cliente,True,DEAL,TEXT,0,23,0,0,0
-2,CF_dVKmQAS1CwydpmWR,[LP Orçamento] {Fechada} Prazo para o material,True,CONTACT,TEXT,0,10,0,0,0
-2,CF_vG0mR0ikCBQkKqbV,[LP Orçamento] {Fechada} Prazo para o material,True,DEAL,TEXT,0,24,0,0,0
-2,CF_2ojMxASPC6AZLmOE,Motivo de Perda,True,CONTACT,TEXT,0,11,0,0,0
+2,CF_K7Rm8wSRC9EKdMbN,[LP Conversão][LP Orçamento]{Fechada} Qual é o seu Perfil?,True,CONTACT,TEXT,0,12,0,0,0.0
+2,CF_gvGm3rS0CebzwM45,[LP Conversão][LP Orçamento] {Fechada} Você quer receber informações de qual produto Lesco?,True,CONTACT,TEXT,0,13,0,0,0.0
+2,CF_wGrqzpiVC64dAmLo,Motivo de Perda,True,DEAL,TEXT,0,25,0,0,0.0
+2,CF_E79Mr2ioCVNpdMZJ,[LP Conversão][LP Orçamento]{Fechada} Qual é o seu Perfil?,True,DEAL,TEXT,0,26,0,0,0.0
+2,CF_8P5q4Vi2Co0BgmRJ,[LP Conversão][LP Orçamento] {Fechada} Você quer receber informações de qual produto Lesco?,True,DEAL,TEXT,0,27,0,0,0.0
+2,CF_G21qVjSlCeanpqAX,Orçamento,True,CONTACT,TEXT,0,14,0,0,0.0
+2,CF_g40MLBiPC1p88D29,Orçamento,True,DEAL,TEXT,0,28,0,0,0.0
+2,CF_nrLDXoiVCar91mOa,Fonte,True,DEAL,TEXT,Qual a fonte de prospecção do Lead?,29,"{""id"": 9328}","[{""id"": 56548}]",0.0
+2,CF_x1kq63SnCYrprMzY,Camada Funil,True,CONTACT,TEXT,0,15,0,0,0.0
+2,CF_eZYm9BiyCorWaD47,Camada Funil,True,DEAL,TEXT,0,30,0,0,0.0
+2,CF_6rRmwGSvC1a9Lm4X,gclid_field,True,CONTACT,TEXT,0,16,0,0,0.0
+2,CF_K7Rm8QiRC9Qo6DbN,gclid_field,True,DEAL,TEXT,0,31,0,0,0.0
+2,CF_Rg7Mn4SLC8oVGDvd,Origem,True,CONTACT,TEXT,0,17,0,0,0.0
+2,CF_Lo1qjyi1CJWNrDer,Origem,True,DEAL,TEXT,0,32,0,0,0.0
+2,CF_2ojMxASPC61ljmOE,Perfil do Lead,True,CONTACT,TEXT,0,18,0,0,0.0
+2,CF_K7Rm8wSRC91L8MbN,Prazo Material,True,CONTACT,TEXT,0,19,0,0,0.0
+2,CF_3LvDvEi4ClVWom6a,Perfil do Lead,True,DEAL,TEXT,0,33,0,0,0.0
+2,CF_wGrqzpiVC6YEWmLo,Prazo Material,True,DEAL,TEXT,0,34,0,0,0.0
+2,CF_2ojMxASPC6PL7mOE,Já concluiu a sua obra?,True,CONTACT,TEXT,0,20,0,0,0.0
+2,CF_POEMywieCLpXWDdk,Já concluiu a sua obra?,True,DEAL,TEXT,0,35,0,0,0.0
+2,CF_eZYm9BivUo9aoD47,Data de envio da proposta,True,DEAL,DATE,0,36,0,0,0.0
+2,CF_dN7MGZSGCOBNkqeY,Perfil,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_rpGmBJSxSRVE9meR,Interesse,True,CONTACT,NUMBER,0,0,0,0,0.0
+2,CF_rpGmBJSoCRVE8meR,Fase da lead,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_R7PDNOSGCZ8L7qWJ,Cidade,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_AE5mp6SjCdkL4qO3,Estado,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_075MJBSjC6QKJMaz,Tags,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_VRAqdlSdCE3A2qbL,RD Station ID,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_0WGqoGSKC9OVZqnP,Origem do lead,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_oJZmPVSKCGwnoqgv,Já concluiu a sua obra?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_VrKMbOSaCOJ1KmZY,Qual é o seu Perfil?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_49RM1vSLCBOWvmBW,Você quer receber informações de qual produto Lesco?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_Rg7MnEiLCAZLyqvd,Perfil,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_42AmaJiaSwVN5Djl,Interesse,True,DEAL,NUMBER,0,0,0,0,0.0
+2,CF_42AmaJiZCwVNbDjl,Fase da lead,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_Lo1qjyi1CnxK3Der,Cidade,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_Pj3qYeieCr8lEqQe,Estado,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_YXoDkki3CVk40DGE,Tags,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_dVKmQ5i1CdeJQmWR,RD Station ID,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_A4wMWNigC6QwkqB8,Origem do lead,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_6rRmweivC6d3dq4X,Já concluiu a sua obra?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_vG0mR0ikCk6bgqbV,Qual é o seu Perfil?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_2ojMxLiPCZkOpMOE,Você quer receber informações de qual produto Lesco?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_vG0mR0iwik6AzqbV,Origem,True,DEAL,SINGLE_OPTION,Origem do Lead,1,"{""id"": 9328}",0,0.0
+2,CF_2ojMxLiNiZk9OMOE,Canal (Comunicação),True,DEAL,SINGLE_OPTION,Entrou em contato como?,2,"{""id"": 9328}",0,0.0
+2,CF_vG0mR0ikCk6AAqbV,Nome da Obra,True,DEAL,TEXT,Nome da Obra,3,"{""id"": 9328}",0,0.0
+2,CF_POEMywiZiJPQzDdk,Produto/Serviço,True,DEAL,MULTIPLE_OPTION,Inserir Produtos e Serviços da Proposta,4,"{""id"": 9328}",0,0.0
+2,CF_K7Rm8QiRCKJpLDbN,Cidade,True,DEAL,TEXT,Cidade,5,"{""id"": 9328}",0,0.0
+2,CF_wGrqzpi3id9nQmLo,Estado,True,DEAL,SINGLE_OPTION,Inserir UF,6,"{""id"": 9328}",0,0.0
+2,CF_wGrqzpiVCd9nZmLo,Observações,True,DEAL,TEXT,Observações,7,"{""id"": 9331}",0,0.0
+2,CF_eZYm9BiKiRgJzD47,Representante,True,DEAL,SINGLE_OPTION,Encaminhado ao Representante,8,"{""id"": 9328}",0,0.0
+2,CF_G5rMe5iBS3QBKMyj,Quantidade (m²),True,DEAL,NUMBER,Metragem Quadrada,9,"{""id"": 9328}",0,0.0
+2,CF_3nGqEoiJilYo9mYA,Perfil do Cliente,True,DEAL,SINGLE_OPTION,Escolher Perfil,10,"{""id"": 9328}",0,0.0
+2,CF_KaZmKySOC0AjxqJk,Solicite seu Orçamento,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_G21qV7ilCx8lpMAX,Solicite seu Orçamento,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_AE5mp6SjCd9wOqO3,Motivo de Perda,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_0WGqoEiKC9AY5mnP,Motivo de Perda,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_gPpD73SkCx0XzDvo,Origem,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_3NrDZBSnCJ1vKDP5,Produto/Serviço,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_rpGmBPioCR37dqeR,Origem,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_R7PDNQiGCZ3bWmWJ,Produto/Serviço,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_Pj3qYeidirRLwqQe,Prazo para o Material,True,DEAL,SINGLE_OPTION,Para Quando você precisa do Material?,14,"{""id"": 9328}",0,0.0
+2,CF_K7Rm8wSRCKYQxMbN,Para quando você precisa do material?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_3LvDvEi4CN7E2m6a,Para quando você precisa do material?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_A4wMWKUzSJwwAMB8,CNPJ.,True,COMPANY,NUMBER,CNPJ.,1,0,0,0.0
+2,CF_6rRmweivC133gq4X,Validade da Proposta,True,DEAL,TEXT,Validade da Proposta,11,0,0,0.0
+2,CF_vG0mR0ikCBbbyqbV,Forma de Pagamento,True,DEAL,TEXT,Forma de Pagamento,12,0,0,0.0
+2,CF_2ojMxLiPC6OOLMOE,Frete,True,DEAL,TEXT,Frete,13,0,0,0.0
+2,CF_ylAm0KS6C495AMvb,Qual é o seu perfil ?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_Rg7Mn4SLC8XAODvd,Já concluiu a sua obra ?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_A4wMWYSgCJEjBDB8,URL pública,True,CONTACT,URL,0,4,0,0,0.0
+2,CF_wPVm2oS2Cd9bZDK6,Para quando você precisa do material ?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_42AmakSZCLAwVqjl,Você quer receber informação de qual produto Lesco ?,True,CONTACT,TEXT,0,0,0,0,0.0
+2,CF_YXoDkki3CXYVPDGE,Qual é o seu perfil ?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_dVKmQ5i1Cwod0mWR,Já concluiu a sua obra ?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_A4wMWNigCJl69qB8,Para quando você precisa do material ?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_6rRmweivC1Z6vq4X,Você quer receber informação de qual produto Lesco ?,True,DEAL,TEXT,0,0,0,0,0.0
+2,CF_YXoDk8S3CXogNqGE,Você que receber informação de qual produto Lesco?,True,CONTACT,TEXT,0,1,0,0,0.0
+2,CF_6rRmweivC1A7Gq4X,Você que receber informação de qual produto Lesco?,True,DEAL,TEXT,0,15,0,0,0.0
+2,CF_Lo1qjjS1CJgw6qer,Qual é o seu perfil?,True,CONTACT,TEXT,0,2,0,0,0.0
+2,CF_Pj3qYoSeCj3ZZmQe,Para quando precisa do material?,True,CONTACT,TEXT,0,3,0,0,0.0
+2,CF_A4wMWNigCJEj6qB8,Qual é o seu perfil?,True,DEAL,TEXT,0,16,0,0,0.0
+2,CF_6rRmweivC1gb1q4X,Para quando precisa do material?,True,DEAL,TEXT,0,17,0,0,0.0
+2,CF_vG0mRlSPSBQXzqbV,Numero de conversões,True,CONTACT,NUMBER,0,5,0,0,0.0
+2,CF_vG0mRlSkCBQXbqbV,Produto/Serviço,True,CONTACT,TEXT,0,6,0,0,0.0
+2,CF_2ojMxASPC6AWwmOE,[LP Orçamento]{Fechada} Já concluiu sua obra?,True,CONTACT,TEXT,0,7,0,0,0.0
+2,CF_K7Rm8wSRC9EapMbN,Prazo para o Material,True,CONTACT,TEXT,0,8,0,0,0.0
+2,CF_gvGm3rS0CebNYM45,Perfil do Cliente,True,CONTACT,TEXT,0,9,0,0,0.0
+2,CF_wGrqzpiVC64jEmLo,URL pública,True,DEAL,URL,0,18,0,0,0.0
+2,CF_8P5q4Vi1So0O3mRJ,Numero de conversões,True,DEAL,NUMBER,0,19,0,0,0.0
+2,CF_8P5q4Vi2Co0O5mRJ,Produto/Serviço,True,DEAL,TEXT,0,20,0,0,0.0
+2,CF_QJXmA5ijCR7d9m25,[LP Orçamento]{Fechada} Já concluiu sua obra?,True,DEAL,TEXT,0,21,0,0,0.0
+2,CF_x1kq6oinCYbWdMzY,Prazo para o Material,True,DEAL,TEXT,0,22,0,0,0.0
+2,CF_KaZmKNiOCxG7yMJk,Perfil do Cliente,True,DEAL,TEXT,0,23,0,0,0.0
+2,CF_dVKmQAS1CwydpmWR,[LP Orçamento] {Fechada} Prazo para o material,True,CONTACT,TEXT,0,10,0,0,0.0
+2,CF_vG0mR0ikCBQkKqbV,[LP Orçamento] {Fechada} Prazo para o material,True,DEAL,TEXT,0,24,0,0,0.0
+2,CF_2ojMxASPC6AZLmOE,Motivo de Perda,True,CONTACT,TEXT,0,11,0,0,0.0
