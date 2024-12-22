@@ -4,7 +4,7 @@ import pandas as pd
 def tratamento_dos_dados():
     # ACTIVITIES
     
-    df_activities = pd.read_excel('moskit_activities.xlsx')
+    df_activities = pd.read_excel('./xlsx/moskit_activities.xlsx')
 
     df_activities = df_activities.fillna(value=0, inplace=False )
 
@@ -17,7 +17,7 @@ def tratamento_dos_dados():
     df_activities.to_csv('./csv/moskit_activities.csv', index=False)
 
     # COMPANIES
-    df_companies = pd.read_excel('moskit_companies.xlsx')
+    df_companies = pd.read_excel('./xlsx/moskit_companies.xlsx')
     df_companies = df_companies.fillna(0, inplace=False )
 
 
@@ -28,7 +28,7 @@ def tratamento_dos_dados():
     df_companies.to_csv('./csv/moskit_companies.csv', index=False)
 
     # CONTACTS
-    df_contacts = pd.read_excel('moskit_contacts.xlsx')
+    df_contacts = pd.read_excel('./xlsx/moskit_contacts.xlsx')
     df_contacts = df_contacts.fillna(0, inplace=False)
     print(df_contacts)
 
@@ -36,7 +36,7 @@ def tratamento_dos_dados():
     df_contacts.to_csv('./csv/moskit_contacts.csv', index=False)
 
     # CUSTOM_FIELDS
-    df_custom_fields = pd.read_excel('moskit_custom_fields.xlsx')
+    df_custom_fields = pd.read_excel('./xlsx/moskit_custom_fields.xlsx')
     df_custom_fields = df_custom_fields.fillna(0, inplace=False , )
     print(df_custom_fields)
 
@@ -52,7 +52,7 @@ def tratamento_dos_dados():
     df_deals.to_csv('./csv/moskit_deals.csv', index=False)                                              
 
     # LOSTREASONS
-    df_lostreasons = pd.read_excel('moskit_lostreasons.xlsx')
+    df_lostreasons = pd.read_excel('./xlsx/moskit_lostreasons.xlsx')
     df_lostreasons = df_lostreasons.fillna(0, inplace=False ) 
 
     #Salvando o arquivo csv            
@@ -60,14 +60,14 @@ def tratamento_dos_dados():
 
 
     # PIPELINES
-    df_pipelines = pd.read_excel('moskit_pipelines.xlsx')
+    df_pipelines = pd.read_excel('./xlsx/moskit_pipelines.xlsx')
     df_pipelines = df_pipelines.fillna(0, inplace=False )  
 
     #Salvando o arquivo csv  
     df_pipelines.to_csv('./csv/moskit_pipelines.csv', index=False)
 
     # STAGES
-    df_stages = pd.read_excel('moskit_stages.xlsx')
+    df_stages = pd.read_excel('./xlsx/moskit_stages.xlsx')
     df_stages = df_stages.fillna(0, inplace=False )
 
     #Salvando o arquivo csv                              
