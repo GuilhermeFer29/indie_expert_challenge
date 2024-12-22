@@ -1,5 +1,8 @@
 import pandas as pd
-# Lendo o arquivo excel e preenchendo os valores nulos com 0 e salvando em um arquivo csv com o mesmo nome
+
+'''Funcao que le o arquivo excel e preenchendo 
+    os valores NaN com 0    
+    e depois e salvando em um arquivo csv com o mesmo nome''' 
 
 def tratamento_dos_dados():
     # ACTIVITIES
@@ -44,7 +47,7 @@ def tratamento_dos_dados():
     df_custom_fields.to_csv('./csv/moskit_custom_fields.csv', index=False)    
 
     # DEALS
-    df_deals = pd.read_excel('moskit_deals.xlsx')
+    df_deals = pd.read_excel('./xlsx/moskit_deals.xlsx')
     df_deals = df_deals.fillna(0, inplace=False )
     print(df_deals)
 
@@ -73,4 +76,12 @@ def tratamento_dos_dados():
     #Salvando o arquivo csv                              
     df_stages.to_csv('./csv/moskit_stages.csv', index=False)
 
-tratamento_dos_dados()
+    # USERS
+    df_users = pd.read_excel('./xlsx/moskit_users.xlsx')
+    df_users = df_users.fillna(0, inplace=False )
+
+    #Salvando o arquivo csv  
+    df_users.to_csv('./csv/moskit_users.csv', index=False)  
+    
+if __name__ == "__main__":
+    tratamento_dos_dados()
