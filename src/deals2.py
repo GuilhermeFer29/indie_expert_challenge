@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 # Função para carregar os arquivos CSV
 def load_data(deals_path, users_path):
@@ -20,6 +23,33 @@ def merge_deals_with_users(deals_df, users_df):
 # Função para agrupar e contar os deals por usuário e status
 def group_and_count_deals(merged_df):
     return merged_df.groupby(['createdby', 'status']).size().reset_index(name='count')
+
+def plot_bar_chart(status_count):
+    # Definir cores para cada status
+    status_colors = {
+        'LOST': 'red',
+        'WON': 'green',
+        'OPEN': 'orange'
+    }
+
+    # Garantir que a coluna 'status' está correta e não tenha valores inesperados
+    status_count['color'] = status_count['status'].apply(lambda x: status_colors.get(x, 'gray'))  # Default 'gray' caso algum status não esteja no mapeamento
+
+    # Plotando com Matplotlib
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x='createdby', y='count', hue='status', data=status_count, palette=status_colors)
+
+    # Título e rótulos
+    plt.title("Contagem de Status por Usuário", fontsize=16)
+    plt.xlabel("Usuário", fontsize=12)
+    plt.ylabel("Contagem de Deals", fontsize=12)
+    plt.xticks(rotation=45, ha='right')
+    plt.legend(title="Status")
+    plt.tight_layout()
+
+    # Exibir o gráfico no Streamlit
+    st.pyplot(plt)
+
 
 # Função principal para carregar e processar os dados
 def main():
@@ -60,10 +90,11 @@ def main():
     st.title("Contagem de Status por Usuário")
     st.dataframe(status_count)
 
-    # Criar gráfico de pizza para visualizar os dados
-    st.subheader("Gráfico de Contagem por Status e Usuário")
-    pivot_table = status_count.pivot(index='createdby', columns='status', values='count').fillna(0)
-    st.bar_chart(pivot_table)
+    # Criar gráfico de barras customizado
+    plot_bar_chart(status_count)
+
+    # Exibir gráficos no Streamlit
+    
 
 # Executar a função principal
 if __name__ == "__main__":
