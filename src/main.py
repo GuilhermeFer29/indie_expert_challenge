@@ -1,7 +1,6 @@
 import streamlit as st
 import function_deals as fd
 import function_contacts as fc
-from visualizations.ranked_contacts import process_contacts_and_users
 from visualizations.pie_chart import plot_pie_chart_svg
 
 # Função principal para carregar e processar os dados
@@ -10,6 +9,7 @@ def main():
     users_file = "../data/csv/moskit_users.csv"
     contacts_file = "../data/csv/moskit_contacts.csv"
     users_file = "../data/csv/moskit_users.csv"
+    
     # Carregar dados
     deals_df, users_df, contacts_df = fd.load_data(deals_file, users_file, contacts_file)
     
@@ -41,14 +41,13 @@ def main():
     status_count = status_count.sort_values(by='count', ascending=False)
 
     # Exibir resultados
-    st.title("Contagem de Status por Usuário")
+    st.title("Contagem de Status por Vendedor")
     st.dataframe(status_count)
-    st.subheader("Ranking de Usuários")
-    st.write(fc.process_contacts_and_users(contacts_file, users_file))
-    # Exibir gráficos
-    plot_pie_chart_svg(status_count)
-    process_contacts_and_users(contacts_file, users_file)
-    fc.processed_contacts = fc.preprocess_contacts(contacts_df, users_df)
+    st.subheader("Ranking de Vendedores")
+    st.write(status_count[['createdby', 'count']])
+    
+    plot_pie_chart_svg(status_count= status_count)
+    fc.process_contacts_and_users(contacts_df, users_df)
     
 
 # Executar a função principal

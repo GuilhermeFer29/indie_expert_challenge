@@ -1,44 +1,34 @@
 import pandas as pd
 import ast
+import streamlit as st
+
+# Funçao para carregar os arquivos CSV
+def load_csv(file_path):
+    
+    return pd.read_csv(file_path)
 
 # Função para extrair o ID de 'createdby' e garantir que ele seja numérico
 def preprocess_contacts(contacts_df, users_df):
-# Verificar se 'createdby' é uma string
-    if contacts_df['createdby'].dtype != 'object':
-        contacts_df['createdby'] = contacts_df['createdby'].astype(str)
-
-    # Tentar extrair o ID de 'createdby' se for uma string com estrutura JSON-like
-    try:
-        contacts_df['createdby_id'] = contacts_df['createdby'].apply(lambda x: ast.literal_eval(x).get('id') if isinstance(x, str) else None)
-    except (ValueError, SyntaxError):
-        raise ValueError("Os valores na coluna 'createdby' não estão no formato esperado (JSON-like).")
-
-    # Contar quantos contatos cada usuário criou
-    createdby_count = contacts_df['createdby_id'].value_counts().reset_index()
-    createdby_count.columns = ['id', 'created_count']
-
-    # Cruzar com os dados dos usuários
-    processed_contacts = pd.merge(createdby_count, users_df, on='id', how='left')
-    return processed_contacts
+    contacts_df['createdby'] = contacts_df['createdby'].str.extract(r'"id":\s*(\d+)')
+    contacts_df['createdby'] = pd.to_numeric(contacts_df['createdby'], errors='coerce')
+    return contacts_df , users_df
 
 
 # Função para realizar o merge entre Contacts e users
 def merge_contacts_with_users(contacts_df, users_df):
-    return pd.merge(contacts_df[['createdby', 'status']], users_df[['id', 'name']], left_on='createdby', right_on='id', how='left')
+    return pd.merge(contacts_df[['createdby']], users_df[['id', 'name']], left_on='createdby', right_on='id', how='left')
 
 # Função para agrupar e contar os Contacts por usuário e status
 def group_and_count_contacts(merged_df):
-    return merged_df.groupby(['createdby', 'status']).size().reset_index(name='count')
+    return merged_df.groupby(['createdby']).size().reset_index(name='count')
 
-def process_contacts_and_users(contacts_file, users_file):
+def process_contacts_and_users(contacts_df, users_df):
     # Carregar os arquivos
-    contacts_df = pd.read_csv(contacts_file)
-    users_df = pd.read_csv(users_file)
+    contacts_df = load_csv(file_path='../data/csv/moskit_contacts.csv')
+    users_df = load_csv(file_path='../data/csv/moskit_users.csv')
 
-    # Pré-processar os contatos
-    processed_contacts = preprocess_contacts(contacts_df, users_df)
-
-    # Ordenar pelo número de contatos criados em ordem decrescente
-    processed_contacts = processed_contacts.sort_values(by='created_count', ascending=False)
+    # Extrair o ID de 'createdby' e garantir que ele seja numérico
+    contacts_df, users_df = preprocess_contacts(contacts_df, users_df)
+    return contacts_df, users_df
 
 
