@@ -1,29 +1,48 @@
-# Funções para criar gráficos
-import matplotlib.pyplot as plt
+import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-import visualizations.bar_chart as bc
+from function.function_contacts import preprocess_contacts, group_and_count_contacts
 
-def plot_pie_chart_svg(status_count):
-    # Calcular os tamanhos para cada status
-    sizes = status_count.groupby('status')['count'].sum()
-    labels = sizes.index
-    values = sizes.values
-    explode = (0.1, 0, 0)
-    # Definir cores para cada status
-    status_colors = {
-        'LOST': 'red',
-        'WON': 'green',
-        'OPEN': 'orange'
-    }
+def merge_contacts_with_users_via_deals(contacts_df, users_df):
+    return pd.merge(
+        contacts_df[['createdby']],  # Substituir 'deals_df' por 'contacts_df'
+        users_df[['id', 'name']],
+        left_on='createdby',
+        right_on='id',
+        how='left'
+    )
 
+def plot_pie_chart_contacts():
     
-    # Criar o gráfico
-    fig = go.Figure(data=[go.Pie( labels=labels, values=values + explode, textinfo='label+percent', hole=.3, marker=dict(colors=[status_colors.get(label, 'gray') for label in labels]))])
+    # Carregar os dados
+    contacts_file = "../data/csv/moskit_contacts.csv"
+    users_file = "../data/csv/moskit_users.csv"
+    contacts_df = pd.read_csv(contacts_file)
+    users_df = pd.read_csv(users_file)
 
-    # Exibir o gráfico
+    # Pré-processar os dados
+    contacts_df, users_df = preprocess_contacts(contacts_df, users_df)    
+    merged_df = merge_contacts_with_users_via_deals(contacts_df, users_df)    
+    merged_df['createdby'] = merged_df['name'] 
+    grouped_contacts = group_and_count_contacts(merged_df)
+
+    # Definir os dados para o gráfico
+    labels = grouped_contacts['createdby']  # Nomes dos usuários
+    values = grouped_contacts['count']     # Contagem de contatos
+
+    # Criar o gráfico de pizza
+    fig = go.Figure(
+        data=[
+            go.Pie(
+                labels=labels,
+                values=values,
+                textinfo='label+percent',
+                hole=.3,
+                marker=dict(colors=['blue', 'green', 'orange', 'red'])
+            )
+        ]
+    )
+
+  
+    st.title("Gráfico de Contatos por Usuário")
     st.plotly_chart(fig, use_container_width=True)
-    
-    
-    
-

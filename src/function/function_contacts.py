@@ -2,7 +2,6 @@ import pandas as pd
 import ast
 import streamlit as st
 
-# Funçao para carregar os arquivos CSV
 def load_csv(file_path):
     
     return pd.read_csv(file_path)
@@ -12,7 +11,6 @@ def preprocess_contacts(contacts_df, users_df):
     contacts_df['createdby'] = contacts_df['createdby'].str.extract(r'"id":\s*(\d+)')
     contacts_df['createdby'] = pd.to_numeric(contacts_df['createdby'], errors='coerce')
     return contacts_df , users_df
-
 
 # Função para realizar o merge entre Contacts e users
 def merge_contacts_with_users(contacts_df, users_df):
