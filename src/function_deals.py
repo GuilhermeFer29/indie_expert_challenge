@@ -13,8 +13,17 @@ def preprocess_deals(deals_df):
     deals_df['createdby'] = pd.to_numeric(deals_df['createdby'], errors='coerce')
     return deals_df
 
+def traduction_status(status):
+    traduction = {
+        "lost": "Perdido",
+        "open": "Aberto",
+        "won": "Ganho"
+        # Adicione outras traduções conforme necessário
+    }
+    return traduction.get(status, status)
 # Função para realizar o merge entre deals e users
 def merge_deals_with_users(deals_df, users_df):
+    
     return pd.merge(deals_df[['createdby', 'status']], users_df[['id', 'name']], left_on='createdby', right_on='id', how='left')
 
 # Função para agrupar e contar os deals por usuário e status

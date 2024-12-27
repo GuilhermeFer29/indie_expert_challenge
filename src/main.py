@@ -39,14 +39,14 @@ def main():
 
     # Ordenar por quantidade de deals (opcional)
     status_count = status_count.sort_values(by='count', ascending=False)
-
     # Exibir resultados
-    st.title("Contagem de Status por Vendedor")
-    st.dataframe(status_count)
-    st.subheader("Ranking de Vendedores")
-    st.write(status_count[['createdby', 'count']])
+    st.title(" Status de  Quantidade de Ofertas por Usuário ")
+    st.bar_chart(status_count, x= "createdby", y="count", color="status", horizontal=True)
     
+    st.title("Grafico de Ofertas por Status")
     plot_pie_chart_svg(status_count= status_count)
+    
+    # Processar contatos e usuários
     fc.process_contacts_and_users(contacts_df, users_df)
     
 

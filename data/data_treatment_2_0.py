@@ -45,4 +45,3 @@ def tratamento_dos_dados():
 
 if __name__ == "__main__":
     tratamento_dos_dados()
-    
