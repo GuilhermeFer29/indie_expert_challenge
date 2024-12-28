@@ -4,9 +4,9 @@ import streamlit as st
 
 def bar_chart(deals_df, users_df,contacts_df, status_count):
     # Carregar os dados
-    deals_file = "data/csv/moskit_deals.csv" 
-    users_file = "data/csv/moskit_users.csv"
-    contacts_file = "data/csv/moskit_contacts.csv"
+    deals_file = "src/data/csv/moskit_deals.csv" 
+    users_file = "src/data/csv/moskit_users.csv"
+    contacts_file = "src/data/csv/moskit_contacts.csv"
     
     deals_df, users_df, contacts_df = fd.load_data(deals_file, users_file, contacts_file)
 
