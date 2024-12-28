@@ -15,8 +15,8 @@ def merge_contacts_with_users_via_deals(contacts_df, users_df):
 def plot_pie_chart_contacts():
     
     # Carregar os dados
-    contacts_file = "./data/csv/moskit_contacts.csv"
-    users_file = "./data/csv/moskit_users.csv"
+    contacts_file = "data/csv/moskit_contacts.csv"
+    users_file = "data/csv/moskit_users.csv"
     contacts_df = pd.read_csv(contacts_file)
     users_df = pd.read_csv(users_file)
 
