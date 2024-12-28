@@ -3,7 +3,7 @@ from bar_chart import bar_chart
 import streamlit as st
 def main():
     
-    st.subheader("Este  :red[Dashboard]  apresenta análises de vendas e desempenho de equipe para facilitar a tomada de decisão.  :sunglasses:")
+    st.subheader("Este  :red[Dashboard]  apresenta análises de vendas e desempenho de equipe para facilitar a tomada de decisão.")
     
 # Carregar Graficos   
     bar_chart('deals_df', 'users_df','contacts_df', 'status_count')
