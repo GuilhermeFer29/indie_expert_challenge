@@ -44,5 +44,5 @@ def plot_pie_chart_contacts():
     )
 
   
-    st.title("Gráfico de Contatos por Usuário")
+    st.subheader("Gráfico de Contatos por :red[Vendedor] (Pizza)")
     st.plotly_chart(fig, use_container_width=True)

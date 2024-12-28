@@ -39,7 +39,7 @@ def bar_chart(deals_df, users_df,contacts_df, status_count):
     # Ordenar por quantidade de deals 
     status_count = status_count.sort_values(by='count', ascending=False)
     # Exibir resultados
-    st.title(" Status de  Quantidade de Ofertas por Usuário ")
+    st.subheader(" Status de  Quantidade de Ofertas por :red[Vendedor] (Barras) ")
     st.bar_chart(status_count, x= "createdby", y="count", color="status", horizontal=True)
     
     return status_count , deals_df, users_df , contacts_df
