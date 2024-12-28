@@ -2,7 +2,7 @@ import function.function_deals as fd
 import streamlit as st
 
 
-def bar_chart(deals_df, users_df, status_count):
+def bar_chart(deals_df, users_df,contacts_df, status_count):
     # Carregar os dados
     deals_file = "../data/csv/moskit_deals.csv" 
     users_file = "../data/csv/moskit_users.csv"
@@ -42,4 +42,4 @@ def bar_chart(deals_df, users_df, status_count):
     st.title(" Status de  Quantidade de Ofertas por Usuário ")
     st.bar_chart(status_count, x= "createdby", y="count", color="status", horizontal=True)
     
-    return status_count , deals_df, users_df
+    return status_count , deals_df, users_df , contacts_df
