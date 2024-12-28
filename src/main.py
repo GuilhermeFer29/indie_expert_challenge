@@ -1,5 +1,5 @@
-import visualizations.pie_chart as pc
-from visualizations.bar_chart import bar_chart
+import pie_chart as pc
+from bar_chart import bar_chart
 
 def main():
 # Carregar Graficos   
