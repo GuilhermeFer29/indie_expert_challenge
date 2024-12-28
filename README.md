@@ -49,9 +49,9 @@ O projeto utiliza dados em .csv para demonstração:
 ## 📄 **Como Executar**
 
 ### 1. Clone o repositório
-
+```bash
 git clone https://github.com/GuilhermeFer29/indie_expert_challenge.git
-
+```
 
 ### 2. Instale as dependências
 Recomenda-se o uso de um ambiente virtual:
