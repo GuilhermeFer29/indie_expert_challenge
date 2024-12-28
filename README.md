@@ -2,7 +2,8 @@
  
 # Dashboard de Análise Comercial (CRM)
 
-Este repositório contém o código para o desenvolvimento de um **dashboard interativo** que realiza a análise descritiva e diagnóstica de dados comerciais, com o objetivo de fornecer insights claros e objetivos para gestores. O projeto utiliza ferramentas em Python como **Streamlit**, **Plotly**, **pandas** e **seaborn**.
+Este repositório contém o código para o desenvolvimento de um **dashboard** 
+que realiza a análise descritiva e diagnóstica de dados comerciais, com o objetivo de fornecer insights claros e objetivos para gestores. O projeto utiliza ferramentas em Python como **Streamlit**, **Plotly** e **pandas** 
 
 ---
 
@@ -10,16 +11,18 @@ Este repositório contém o código para o desenvolvimento de um **dashboard int
 
 O objetivo é criar um dashboard intuitivo e interativo que permita:
 1. **Análise de desempenho de vendas**: Acompanhamento do desempenho de vendedores e comparação com as metas estabelecidas.
+
 2. **Facilidade na tomada de decisão**: Fornecer informações relevantes para o gestor sem a necessidade de navegações excessivas (foco no conceito "Zero Click").
 3. **Interatividade**: Apresentar visualizações dinâmicas e responsivas para uma experiência de usuário fluida.
 
 ---
 
 ## 🔧 **Funcionalidades**
-- **KPIs principais**: Total de vendas, média de vendas por vendedor e outros indicadores relevantes.
+- **KPIs principais**: Total de vendas, média de vendas por vendedor .
 - **Gráficos interativos**: Gráficos de barras e pizza que destacam o desempenho de cada vendedor.
+
 - **Tabela com gradiente de cores**: Facilita a identificação visual de bons e maus desempenhos.
-- **Destaque de metas**: Indica se os vendedores estão acima ou abaixo das metas estabelecidas.
+
 
 ---
 
@@ -40,13 +43,14 @@ As seguintes bibliotecas em Python foram utilizadas:
 
 ## 🔬 **Dados de Exemplo**
 
-O projeto utiliza dados em .xlsx para demonstração:
+O projeto utiliza dados em .csv para demonstração:
 
 
 ## 📄 **Como Executar**
 
 ### 1. Clone o repositório
 
+git clone https://github.com/GuilhermeFer29/indie_expert_challenge.git
 
 
 ### 2. Instale as dependências
@@ -59,10 +63,12 @@ pip install -r requirements.txt
 
 ### 3. Execute o dashboard
 ```bash
+    streamlit run src/main.py
 
 ```
 O dashboard estará disponível em seu navegador no endereço: 
 
+https://indieexpertchallenge.streamlit.app/
 ---
 
 ## 🌟 **Demonstração do Dashboard**
@@ -72,14 +78,10 @@ O dashboard estará disponível em seu navegador no endereço:
 - Média de vendas
 
 ### Gráfico de Barras
-Exibe o desempenho de vendas de cada vendedor com destaque de metas atingidas.
+Exibe o desempenho de vendas de cada vendedor.
 
 ### Gráfico de Pizza
-Mostra a distribuição de desempenho em "Acima da Meta" e "Abaixo da Meta".
-
-### Tabela de Detalhes
-Lista os dados de cada vendedor com um gradiente visual indicando o desempenho.
-
+Mostra a distribuição de desempenho de cada Vendedor.
 
 ## 📚 **Licença**
 Este projeto está licenciado sob a [MIT License](LICENSE).
