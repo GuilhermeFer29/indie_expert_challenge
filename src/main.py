@@ -6,7 +6,7 @@ def main():
     st.subheader("Este  :red[Dashboard]  apresenta análises de vendas e desempenho de equipe para facilitar a tomada de decisão.")
     
 # Carregar Graficos   
-    bar_chart('deals_df', 'users_df','contacts_df', 'status_count')
+    bar_chart()
 # Careegar Grafico Pie Chart        
     pc.plot_pie_chart_contacts()
     
