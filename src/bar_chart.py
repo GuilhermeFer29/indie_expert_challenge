@@ -34,19 +34,22 @@ def bar_chart():
     # Agrupar e contar os deals
     status_count = fd.group_and_count_deals(merged_df)
     status_count = status_count.sort_values(by='count', ascending=False)
+    status_colors = {
+        "lost": "red",
+        "won": "orange",
+        "open": "green"
+    }
 
-    # Criar gráfico com Altair
+# Gráfico de barras com Altair e mapeamento de cores
     bar_chart = alt.Chart(status_count).mark_bar().encode(
-        x='count:Q',
-        y=alt.Y('createdby:N', sort='-x'),
-        color='status:N',
-        tooltip=['createdby', 'status', 'count']
-    ).properties(
-        title="Status de Quantidade de Ofertas por Vendedor"
-    )
+    x='count:Q',
+    y=alt.Y('createdby:N', sort='-x'),
+    color=alt.Color('status:N', scale=alt.Scale(domain=list(status_colors.keys()), range=list(status_colors.values()))),
+    tooltip=['createdby', 'status', 'count']
+).properties(
+    title="Status de Quantidade de Ofertas por Vendedor"
+)
 
-    # Exibir gráfico
-    st.subheader("Status de Quantidade de Ofertas por Vendedor")
     st.altair_chart(bar_chart, use_container_width=True)
     
     return status_count, deals_df, users_df, contacts_df
